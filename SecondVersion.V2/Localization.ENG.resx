@@ -189,6 +189,9 @@
   <data name="Source" xml:space="preserve">
     <value>Source</value>
   </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
   </data>

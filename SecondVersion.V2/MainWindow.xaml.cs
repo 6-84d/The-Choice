@@ -23,6 +23,9 @@ namespace SecondVersion.V2
         public MainWindow()
         {
             InitializeComponent();
+            this.Height = System.Windows.SystemParameters.PrimaryScreenHeight;
+            this.Width = System.Windows.SystemParameters.PrimaryScreenWidth;
+            this.WindowState = WindowState.Maximized;
         }
     }
 }

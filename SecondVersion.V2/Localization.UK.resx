@@ -132,6 +132,9 @@
   <data name="Community" xml:space="preserve">
     <value>Спільнота</value>
   </data>
+  <data name="Confidence" xml:space="preserve">
+    <value>Впевненість</value>
+  </data>
   <data name="Crypto" xml:space="preserve">
     <value>Криптовалюта</value>
   </data>
@@ -159,6 +162,9 @@
   <data name="MostPopular" xml:space="preserve">
     <value>Найпопулярніші</value>
   </data>
+  <data name="Pairs" xml:space="preserve">
+    <value>Пари</value>
+  </data>
   <data name="PurchasePrice" xml:space="preserve">
     <value>Ціна купівлі</value>
   </data>
@@ -180,8 +186,14 @@
   <data name="Sort" xml:space="preserve">
     <value>Упорядкувати</value>
   </data>
+  <data name="Source" xml:space="preserve">
+    <value>Джерело</value>
+  </data>
   <data name="Update" xml:space="preserve">
     <value>Оновити</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Оновлено</value>
   </data>
   <data name="Value" xml:space="preserve">
     <value>Ціна</value>

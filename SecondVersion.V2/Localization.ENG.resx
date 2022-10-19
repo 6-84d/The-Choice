@@ -132,6 +132,9 @@
   <data name="Community" xml:space="preserve">
     <value>Community</value>
   </data>
+  <data name="Confidence" xml:space="preserve">
+    <value>Confidence</value>
+  </data>
   <data name="Crypto" xml:space="preserve">
     <value>Crypto</value>
   </data>
@@ -159,6 +162,9 @@
   <data name="MostPopular" xml:space="preserve">
     <value>Most Popular</value>
   </data>
+  <data name="Pairs" xml:space="preserve">
+    <value>Pairs</value>
+  </data>
   <data name="PurchasePrice" xml:space="preserve">
     <value>Purchase price</value>
   </data>
@@ -180,8 +186,14 @@
   <data name="Sort" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Updated</value>
   </data>
   <data name="Value" xml:space="preserve">
     <value>Value</value>

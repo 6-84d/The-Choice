@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SecondVersion.V2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1650">
+        Title="MainWindow" Height="1080" Width="1920">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"/>
@@ -116,7 +116,5 @@
             <ListBoxItem Content="Fourth"/>
             <ListBoxItem Content="Fifth"/>
         </ListBox>
-        <Label FontSize="25" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
- Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="10"/>
     </Grid>
 </Window>

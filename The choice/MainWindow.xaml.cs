@@ -28,5 +28,11 @@ namespace The_choice
             this.WindowState = WindowState.Maximized;
 
         }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+            Window1 window = new Window1();
+            window.Show();
+        }
     }
 }

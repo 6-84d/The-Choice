@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WpfApp21
+namespace The_choice
 {
     public class CryptoGet
     {

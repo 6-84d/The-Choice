@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_choice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920">
+        Title="The Choice" Height="1080" Width="1920">
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"/>
@@ -96,7 +96,7 @@
             <ComboBoxItem Content="ENG" Name="ENG"/>
         </ComboBox>
         <ListBox x:Name="listOfCurrencies" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="50">
-            <ListBoxItem Content="First"/>
+            <ListBoxItem Content="First" Selected="ListBoxItem_Selected"/>
             <ListBoxItem Content="Second"/>
             <ListBoxItem Content="Third"/>
             <ListBoxItem Content="Fourth"/>

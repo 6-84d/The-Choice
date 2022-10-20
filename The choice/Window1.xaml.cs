@@ -22,6 +22,8 @@ namespace The_choice
         public Window1()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
+            DataContext = new AppVM();
         }
     }
 }

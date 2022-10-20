@@ -5,10 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_choice"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="The Choice" Height="1080" Width="1920">
     <Grid>
         <TabControl>
-            <TabItem Header="Нафта">
+            <TabItem Header="Crypto">
+                <ScrollViewer>
+                    <StackPanel>
+                        <ListBox Height="50">
+                            <ListBoxItem>
+                                    <TabPanel Margin="5">
+                                    <TextBlock Width="50" FontSize="18" Text="#" />
+                                    <TextBlock Width="100" FontSize="18" Text="Id" />
+                                        <TextBlock Width="250" FontSize="18" Text="Name" />
+                                        <TextBlock Width="250" FontSize="18" Text="Price" />
+                                        <TextBlock Width="250" FontSize="18" Text="Volume 24h" />
+                                        <TextBlock Width="250" FontSize="18" Text="Change 1h" />
+                                        <TextBlock Width="250" FontSize="18" Text="Change 24h" />
+                                        <TextBlock Width="250" FontSize="18" Text="Change 7d" />
+                                    </TabPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                        <ListBox Grid.Column="0" ItemsSource="{Binding cryptos}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TabPanel Margin="5">
+                                        <TextBlock Width="50" FontSize="18" Text="{Binding Path=number}" />
+                                        <TextBlock Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.0000000}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=0.00}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                                        <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />
+                                    </TabPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Currencies">
                 <ScrollViewer>
                     <ListBox>
                         <ListBoxItem>
@@ -21,7 +57,7 @@
                     </ListBox>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Метал">
+            <TabItem Header="Materials">
                 <ScrollViewer>
                     <ListBox>
                         <ListBoxItem>
@@ -34,20 +70,7 @@
                     </ListBox>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Золото">
-                <ScrollViewer>
-                    <ListBox>
-                        <ListBoxItem>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                            </Grid>
-                        </ListBoxItem>
-                    </ListBox>
-                </ScrollViewer>
-            </TabItem>
-            <TabItem Header="Газ">
+            <TabItem Header="Shares">
                 <ScrollViewer>
                     <ListBox>
                         <ListBoxItem>

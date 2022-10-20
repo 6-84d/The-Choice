@@ -12,6 +12,7 @@ namespace The_choice
     public class Crypto
     {
         public static int number { get; set; }
+        public int num { get; set; }
         public string asset_id { get; set; }
         public string name { get; set; }
         public double price { get; set; }
@@ -23,6 +24,7 @@ namespace The_choice
         public Crypto()
         {
             number++;
+            num=number;
         }
     }
 }

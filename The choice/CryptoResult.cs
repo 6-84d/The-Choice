@@ -8,6 +8,6 @@ namespace The_choice
 {
     public class CryptoResult
     {
-        public Crypto asset { get; set; }
+        public List<Crypto> assets { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace The_choice
 {
     public class CryptoGet
     {
-        public static async Task<Crypto> LoadCrypto(string url)
+        public static async Task<CryptoResult> LoadCrypto(string url)
         {
             //"https://cryptingup.com/api/assets/ETH";
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
@@ -20,7 +20,7 @@ namespace The_choice
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     CryptoResult Assets = JsonConvert.DeserializeObject<CryptoResult>(content);
-                    return Assets.asset;
+                    return Assets;
                 }
                 else
                 {

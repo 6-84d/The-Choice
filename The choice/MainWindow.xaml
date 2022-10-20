@@ -116,8 +116,8 @@
             <ListBoxItem Content="Fourth"/>
             <ListBoxItem Content="Fifth"/>
         </ListBox>
-        <Image x:Name="firstImage" Source="Options.png" Height="100" Width="100" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="10"/>
-        <Image x:Name="secondImage" Source="Menu.png" Height="100" Width="100" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="10"/>
-        <Image x:Name="thirdImage" Source="Help.png" Height="100" Width="100" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3" Grid.Column="10"/>
+        <Image x:Name="firstImage" Source="Options.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="113,8,0,0" Grid.Column="9"/>
+        <Image x:Name="secondImage" Source="Menu.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Margin="113,64,0,0" Grid.Column="9"/>
+        <Image x:Name="thirdImage" Source="Help.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="113,64,0,0" Grid.Column="9" RenderTransformOrigin="0.013,0.509"/>
     </Grid>
 </Window>

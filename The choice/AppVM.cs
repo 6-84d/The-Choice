@@ -19,66 +19,11 @@ namespace The_choice
         }
         public async void Add()
         {
-            Crypto.number = 0;
-            var info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/BTC");
-            cryptos.Add(info);
-            await Task.Delay(100);
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/ETH");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/USDT");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/USDC");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/BNB");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/XRP");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/BUSD");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/ADA");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/SOL");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/DOGE");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/MATIC");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/DOT");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/DAI");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/TRX");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
-            info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets/SHIB");
-            cryptos.Add(info);
-            await Task.Delay(100);
-
+            var info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets");
+            for (int i = 0; i < info.assets.Count; i++)
+            {
+                cryptos.Add(info.assets[i]);
+            }
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")

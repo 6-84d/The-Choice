@@ -9,9 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Help.png" />
-    <None Remove="Menu.png" />
-    <None Remove="Options.png" />
+    <None Remove="Back.jpg" />
+    <None Remove="lines.png" />
+    <None Remove="Resources\GoBorder.png" />
+    <None Remove="Resources\GoButton.png" />
+    <None Remove="Resources\Help.png" />
+    <None Remove="Resources\LeftImage.png" />
+    <None Remove="Resources\LetsGoButton.png" />
+    <None Remove="Resources\Logo.png" />
+    <None Remove="Resources\Menu.png" />
+    <None Remove="Resources\Options.png" />
+    <None Remove="Resources\RIghtImage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,9 +28,39 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Help.png" />
-    <Resource Include="Menu.png" />
-    <Resource Include="Options.png" />
+    <Resource Include="Resources\Background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\GoBorder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\GoButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LeftImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LetsGoButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Lines.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Options.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\RIghtImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

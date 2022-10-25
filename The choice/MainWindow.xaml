@@ -5,119 +5,115 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_choice"
         mc:Ignorable="d"
-        Title="The Choice" Height="1080" Width="1920">
-    <Grid >
+        Title="MainWindow" Height="1080" Width="1920">
+    <Window.Resources>
+        <ResourceDictionary Source="OurTemplate.xaml"/>
+    </Window.Resources>
+    <Grid x:Name="MyGrid">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Background.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="90*"/>
-            <RowDefinition Height="90*"/>
-            <RowDefinition Height="90*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="126*"/>
+            <RowDefinition Height="226*"/>
             <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="226*"/>
+            <RowDefinition Height="226*"/>
+            <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="15*"/>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <Menu x:Name="menu" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="9" Background="White"  FontSize="30" >
-            <MenuItem Header="FirstPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="SecondPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="ThirdPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="FourthPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="FourthPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="FourthPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="FourthPage">
-                <MenuItem.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Delete"/>
-                        <MenuItem Header="Update"/>
-                    </ContextMenu>
-                </MenuItem.ContextMenu>
-            </MenuItem>
-        </Menu>
-        <ComboBox x:Name="list" Grid.Row="0" Grid.Column="9" Width="50" Height="25" VerticalAlignment="Top" HorizontalAlignment="Right" Background="White">
-            <ComboBoxItem Content="UA" Name="UA"/>
-            <ComboBoxItem Content="ENG" Name="ENG"/>
-        </ComboBox>
-        <ListBox x:Name="listOfCurrencies" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="50">
-            <ListBoxItem Content="First" Selected="ListBoxItem_Selected"/>
-            <ListBoxItem Content="Second"/>
-            <ListBoxItem Content="Third"/>
-            <ListBoxItem Content="Fourth"/>
-            <ListBoxItem Content="Fifth"/>
-        </ListBox>
-        <ListBox x:Name="listOfCryptoCurrencies" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="50">
-            <ListBoxItem Content="First"/>
-            <ListBoxItem Content="Second"/>
-            <ListBoxItem Content="Third"/>
-            <ListBoxItem Content="Fourth"/>
-            <ListBoxItem Content="Fifth"/>
-        </ListBox>
-        <ListBox x:Name="listOfMetals" Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="50">
-            <ListBoxItem Content="First"/>
-            <ListBoxItem Content="Second"/>
-            <ListBoxItem Content="Third"/>
-            <ListBoxItem Content="Fourth"/>
-            <ListBoxItem Content="Fifth"/>
-        </ListBox>
-        <Image x:Name="firstImage" Source="Options.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="113,8,0,0" Grid.Column="9"/>
-        <Image x:Name="secondImage" Source="Menu.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Margin="113,64,0,0" Grid.Column="9"/>
-        <Image x:Name="thirdImage" Source="Help.png" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="113,64,0,0" Grid.Column="9" RenderTransformOrigin="0.013,0.509"/>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="16" Grid.RowSpan="10">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/lines.png"/>
+            </Grid.Background>
+        </Grid>
+        <Image x:Name="Logo" Source="Resources/Logo.png" Grid.ColumnSpan="2" Height="40" Width="200" VerticalAlignment="Bottom"/>
+        <Border Grid.Column="2" Grid.Row="0" Opacity="1" VerticalAlignment="Bottom">
+            <Button x:Name="CryptoPage" Content="Crypto" Foreground="LightGray" FontWeight="Light" FontSize="18"/>
+        </Border>
+        <Button x:Name="CurrenciesPage" Content="Currencies" Grid.Column="4" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" FontSize="18" FontWeight="Light"/>
+        <Button x:Name="MaterialsPage" Content="Materials" Grid.Column="6" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light"/>
+        <Button x:Name="SharesPage" Content="Shares" Grid.Column="8" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light"/>
+        <Button x:Name="OptionsPage" Grid.Column="15" Grid.Row="0" BorderThickness="0" Background="Transparent">
+            <Image Source="Resources/Options.png"/>
+        </Button>
+        <Grid Grid.Row="2" Grid.Column="1" Background="Transparent" Grid.ColumnSpan="10" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="80*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Reliable information" Grid.Row="0" VerticalAlignment="Top" FontSize="90" Grid.RowSpan="2" Foreground="White" FontWeight="Light"/>
+            <Label Content="in one place" Grid.Row="2" VerticalAlignment="Top" FontSize="90" Foreground="White" FontWeight="Light"/>
+        </Grid>
+        <Label Content="An agregator where you can study information about different" FontSize="18" Grid.ColumnSpan="6" Grid.Row="4" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
+        <Label Content="cryptocurrencies, valuable materials, promotions and" FontSize="18" Grid.ColumnSpan="6" Grid.Row="5" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
+        <Label Content="currencies, view places to buy and exchange currencies in a" FontSize="18" Grid.ColumnSpan="6" Grid.Row="6" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
+        <Label Content="comfortable, modern and fast interface" FontSize="18" Grid.ColumnSpan="5" Grid.Row="7" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
+        <Button x:Name="GoButton" Grid.Row="2" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" VerticalAlignment="Center" Content="Lets go!" Height="90" Width="220">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/GoButton.png"/>
+            </Button.Background>
+        </Button>
+        <Grid Grid.Row="9" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="16" Background="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="LeftString" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" Height="30" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/LeftImage.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="RigthString" BorderBrush="Transparent" BorderThickness="0" Grid.Row="0" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Center" Width="20" Height="30">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/RightImage.png"/>
+                </Button.Background>
+            </Button>
+            <Border Grid.Row="0" Grid.Column="0" Opacity="0.1" Background="White">
+                <Button x:Name="FirstImg">
+                </Button>
+            </Border>
+            <Border Opacity="0.1" Grid.Row="0" Grid.Column="2" Background="White">
+                <Button x:Name="SecondImg"/>
+            </Border>
+            <Border  Opacity="0.1" Grid.Row="0" Grid.Column="4" Background="White">
+                <Button x:Name="ThirdImg"/>
+            </Border>
+            <Border  Opacity="0.1" Grid.Row="0" Grid.Column="6" Background="White">
+                <Button x:Name="FourthImg"/>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

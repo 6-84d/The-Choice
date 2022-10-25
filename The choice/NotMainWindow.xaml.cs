@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,9 +18,9 @@ namespace The_choice
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NotMainWindow : Window
     {
-        public MainWindow()
+        public NotMainWindow()
         {
             InitializeComponent();
             this.Height = SystemParameters.PrimaryScreenHeight;
@@ -29,5 +28,10 @@ namespace The_choice
             this.WindowState = WindowState.Maximized;
         }
 
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+            Window1 window = new Window1();
+            window.Show();
+        }
     }
 }

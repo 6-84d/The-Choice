@@ -1,0 +1,28 @@
+﻿<Window x:Class="The_choice.FavoriteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:The_choice"
+        mc:Ignorable="d"
+        Title="FavoriteWindow" Height="450" Width="800">
+    <Grid>
+        <Label>Favorites</Label>
+        <ListBox Name="FavoritesList" ItemsSource="{Binding assets}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="{Binding Path=name}"></Label>
+                        <Label Content="{Binding Path=price}"></Label>
+                        <Button Name="unlikeBtn" Content="Unlike"></Button>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

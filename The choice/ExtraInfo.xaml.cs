@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,17 @@ namespace The_choice
     /// </summary>
     public partial class ExtraWindow : Window
     {
-        public ExtraWindow()
+        private Crypto crypto;
+        public ExtraWindow(Crypto crypto)
         {
             InitializeComponent();
+            this.crypto = crypto;
+        }
+
+        private void AddFavoriteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            StreamWriter writer = new StreamWriter(@"UsersData/Favorites.txt", true);
+            writer.WriteLine(crypto.asset_id, crypto.name, crypto.price);
         }
     }
 }

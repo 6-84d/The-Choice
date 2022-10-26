@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SecondVersion.V2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Resources;
@@ -29,5 +30,10 @@ namespace The_choice
             this.WindowState = WindowState.Maximized;
         }
 
+        private void OptionsPage_Click(object sender, RoutedEventArgs e)
+        {
+            Options options = new Options();
+            options.ShowDialog();
+        }
     }
 }

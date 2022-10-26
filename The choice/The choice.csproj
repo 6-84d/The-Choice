@@ -20,6 +20,8 @@
     <None Remove="Resources\Menu.png" />
     <None Remove="Resources\Options.png" />
     <None Remove="Resources\RIghtImage.png" />
+    <None Remove="Resources\TutorFirst.png" />
+    <None Remove="Resources\TutorFirstPage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +61,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\RIghtImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\TutorFirstPage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

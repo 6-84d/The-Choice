@@ -57,7 +57,7 @@
         <Button x:Name="CurrenciesPage" Content="Currencies" Grid.Column="4" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" FontSize="18" FontWeight="Light"/>
         <Button x:Name="MaterialsPage" Content="Materials" Grid.Column="6" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light"/>
         <Button x:Name="SharesPage" Content="Shares" Grid.Column="8" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light"/>
-        <Button x:Name="OptionsPage" Grid.Column="15" Grid.Row="0" BorderThickness="0" Background="Transparent">
+        <Button x:Name="OptionsPage" Grid.Column="15" Grid.Row="0" BorderThickness="0" Background="Transparent" Click="OptionsPage_Click">
             <Image Source="Resources/Options.png"/>
         </Button>
         <Grid Grid.Row="2" Grid.Column="1" Background="Transparent" Grid.ColumnSpan="10" Grid.RowSpan="3">

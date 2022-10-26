@@ -28,12 +28,32 @@ namespace The_choice
             this.Height = SystemParameters.PrimaryScreenHeight;
             this.Width = SystemParameters.PrimaryScreenWidth;
             this.WindowState = WindowState.Maximized;
+            MainFrame.NavigationService.Navigate(new MainPage());
         }
 
         private void OptionsPage_Click(object sender, RoutedEventArgs e)
         {
             Options options = new Options();
             options.ShowDialog();
+        }
+        private void CryptoPage_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CryptoPage());
+        }
+
+        private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CurrenciesPage());
+        }
+
+        private void MaterialsPage_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new MaterialsPage());
+        }
+
+        private void SharesPage_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new SharesPage());
         }
     }
 }

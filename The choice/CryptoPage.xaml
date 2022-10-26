@@ -1,0 +1,57 @@
+﻿<Page x:Class="The_choice.CryptoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:The_choice"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="CryptoPage">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily"
+                Value="SF UI Display"/>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel HorizontalAlignment="Center">
+                <ListBox Height="50" Background="Transparent">
+                    <ListBoxItem>
+                        <TabPanel>
+                            <Label Width="50" FontSize="18" Content="#"/>
+                            <Label Width="100" FontSize="18" Content="Id" />
+                            <Label Width="250" FontSize="18" Content="Name" />
+                            <Label Width="250" FontSize="18" Content="Price" />
+                            <Label Width="250" FontSize="18" Content="Volume 24h" />
+                            <Label Width="250" FontSize="18" Content="Change 1h"  />
+                            <Label Width="250" FontSize="18" Content="Change 24h" />
+                            <Label Width="250" FontSize="18" Content="Change 7d" />
+                        </TabPanel>
+                    </ListBoxItem>
+                </ListBox>
+                <ListBox Grid.Column="0" ItemsSource="{Binding cryptos}" Background="Transparent">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TabPanel Margin="5">
+                                <TextBlock Width="50" FontSize="18" Text="{Binding Path=num}"/>
+                                <TextBlock Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.0000000}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=0.00}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />
+                            </TabPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

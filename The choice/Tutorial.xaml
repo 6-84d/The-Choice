@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Recources/Background.jpg"/>
+            <ImageBrush ImageSource="Resources\Background.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="320"/>
@@ -20,15 +20,15 @@
             <ColumnDefinition Width="200*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="1" Source="Recources/TutorFirstPage.png" VerticalAlignment="Center"/>
+        <Image Grid.Column="1" Source="Resources\TutorFirstPage.png" VerticalAlignment="Center"/>
         <Button Grid.Column="0" Height="50" Width="30" HorizontalAlignment="Left" BorderThickness="0">
             <Button.Background>
-                <ImageBrush ImageSource="Recources/LeftImage.png"/>
+                <ImageBrush ImageSource="Resources\LeftImage.png"/>
             </Button.Background>
         </Button>
         <Button Grid.Column="2" Height="50" Width="30" HorizontalAlignment="Right" BorderThickness="0">
             <Button.Background>
-                <ImageBrush ImageSource="Recources/RIghtImage.png"/>
+                <ImageBrush ImageSource="Resources\RIghtImage.png"/>
             </Button.Background>
         </Button>
     </Grid>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="SecondVersion.V2.Tutorial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SecondVersion.V2"
+      mc:Ignorable="d" 
+      d:DesignHeight="320" d:DesignWidth="450"
+      Title="Tutorial">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Back.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="320"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="1" Source="TutorFirstPage.png" VerticalAlignment="Center"/>
+        <Button Grid.Column="0" Height="50" Width="30" HorizontalAlignment="Left" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="LeftImage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="2" Height="50" Width="30" HorizontalAlignment="Right" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="RightImage.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

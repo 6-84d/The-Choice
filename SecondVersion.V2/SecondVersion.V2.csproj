@@ -7,4 +7,42 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Back.jpg" />
+    <None Remove="GoBorder.png" />
+    <None Remove="GoButton.png" />
+    <None Remove="LeftImage.png" />
+    <None Remove="LetsGoButton.png" />
+    <None Remove="Lines.png" />
+    <None Remove="Logo.png" />
+    <None Remove="Options.png" />
+    <None Remove="Resources\Menu.png" />
+    <None Remove="Resources\Options.png" />
+    <None Remove="RIghtImage.png" />
+    <None Remove="TutorFirstPage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Back.jpg" />
+    <Resource Include="GoBorder.png" />
+    <Resource Include="GoButton.png" />
+    <Resource Include="LeftImage.png" />
+    <Resource Include="LetsGoButton.png" />
+    <Resource Include="Lines.png" />
+    <Resource Include="Logo.png" />
+    <Resource Include="Options.png" />
+    <Resource Include="Resources\Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Options.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="RIghtImage.png" />
+    <Resource Include="TutorFirstPage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
 </Project>

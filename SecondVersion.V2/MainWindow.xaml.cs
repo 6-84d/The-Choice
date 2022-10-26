@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,6 +27,12 @@ namespace SecondVersion.V2
             this.Height = SystemParameters.PrimaryScreenHeight;
             this.Width = SystemParameters.PrimaryScreenWidth;
             this.WindowState = WindowState.Maximized;
+        }
+
+        private void OptionsPage_Click(object sender, RoutedEventArgs e)
+        {
+            Options options = new Options();
+            options.ShowDialog();
         }
     }
 }

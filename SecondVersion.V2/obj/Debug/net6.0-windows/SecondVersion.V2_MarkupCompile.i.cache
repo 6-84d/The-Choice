@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\App.xaml
-11407045341
+6-2053176497
 
-5-425737127
+9334768693
 194-200944676
-MainWindow.xaml;
+AboutUs.xaml;MainSettings.xaml;MainWindow.xaml;Options.xaml;OurTemplate.xaml;Tutorial.xaml;
 
-False
+True
 

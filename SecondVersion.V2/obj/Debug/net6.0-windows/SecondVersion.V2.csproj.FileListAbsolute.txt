@@ -24,3 +24,12 @@ C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\
 C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\SecondVersion.V2.Localization.UK.resources
 C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\SecondVersion.V2.csproj.GenerateResource.cache
 C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\UK\SecondVersion.V2.resources.dll
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\OurTemplate.baml
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\Options.g.cs
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\Options.baml
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\MainSettings.g.cs
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\MainSettings.baml
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\AboutUs.g.cs
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\AboutUs.baml
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\Tutorial.g.cs
+C:\Users\neonmag\Desktop\OurProject\SecondVersion.V2\SecondVersion.V2\obj\Debug\net6.0-windows\Tutorial.baml

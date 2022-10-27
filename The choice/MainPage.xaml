@@ -52,7 +52,7 @@
         <Label Content="cryptocurrencies, valuable materials, promotions and" FontSize="18" Grid.ColumnSpan="6" Grid.Row="5" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
         <Label Content="currencies, view places to buy and exchange currencies in a" FontSize="18" Grid.ColumnSpan="6" Grid.Row="6" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
         <Label Content="comfortable, modern and fast interface" FontSize="18" Grid.ColumnSpan="5" Grid.Row="7" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
-        <Button x:Name="GoButton" Grid.Row="2" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" VerticalAlignment="Center" Content="Lets go!" Height="90" Width="220">
+        <Button x:Name="GoButton" Grid.Row="2" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" VerticalAlignment="Center" Content="Lets go!" Height="90" Width="220" BorderThickness="0" Foreground="White">
             <Button.Background>
                 <ImageBrush ImageSource="Resources/GoButton.png"/>
             </Button.Background>

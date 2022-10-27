@@ -55,5 +55,10 @@ namespace The_choice
         {
             MainFrame.NavigationService.Navigate(new SharesPage());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new MainPage());
+        }
     }
 }

@@ -50,7 +50,9 @@
                 <ImageBrush ImageSource="Resources/lines.png"/>
             </Grid.Background>
         </Grid>
-        <Image x:Name="Logo" Source="Resources/Logo.png" Grid.ColumnSpan="2" Height="40" Width="200" VerticalAlignment="Bottom"/>
+        <Button  Grid.ColumnSpan="2" Height="40" Width="200" Click="Button_Click">
+            <Image x:Name="Logo" Source="Resources/Logo.png" VerticalAlignment="Bottom"/>
+        </Button>
         <Border Grid.Column="2" Grid.Row="0" Opacity="1" VerticalAlignment="Bottom">
             <Button x:Name="CryptoPage" Content="Crypto" Foreground="LightGray" FontWeight="Light" FontSize="18" Click="CryptoPage_Click"/>
         </Border>

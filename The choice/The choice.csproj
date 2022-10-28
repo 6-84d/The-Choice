@@ -30,40 +30,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Background.jpg">
+    <Resource Include="Resources\Pictures\Background.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\GoBorder.png">
+    <Resource Include="Resources\Pictures\LetsGoButton.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\GoButton.png">
+    <Resource Include="Resources\Pictures\Help.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Help.png">
+    <Resource Include="Resources\Pictures\LeftImage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\LeftImage.png">
+    <Resource Include="Resources\Pictures\Lines.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\LetsGoButton.png">
+    <Resource Include="Resources\Pictures\Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Lines.png">
+    <Resource Include="Resources\Pictures\Menu.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Logo.png">
+    <Resource Include="Resources\Pictures\Options.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Menu.png">
+    <Resource Include="Resources\Pictures\RightImage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Options.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\RIghtImage.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\TutorFirstPage.png">
+    <Resource Include="Resources\Pictures\TutorFirstPage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

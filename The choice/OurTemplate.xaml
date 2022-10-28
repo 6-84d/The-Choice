@@ -3,7 +3,7 @@
     <Style TargetType="Grid">
         <Setter Property="Background">
             <Setter.Value>
-                <ImageBrush ImageSource="Resources/Background.jpg"/>
+                <ImageBrush ImageSource="Resources/Pictures/Background.jpg"/>
             </Setter.Value>
         </Setter>
     </Style>

@@ -22,6 +22,9 @@ namespace The_choice
             var info = await CryptoGet.LoadCrypto("https://cryptingup.com/api/assets");
             for (int i = 0; i < info.assets.Count; i++)
             {
+                info.assets[i].number = i + 1;
+                if (info.assets[i].name == "")
+                    info.assets[i].name = info.assets[i].asset_id;
                 cryptos.Add(info.assets[i]);
             }
         }

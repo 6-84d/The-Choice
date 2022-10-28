@@ -11,7 +11,7 @@ namespace The_choice
 {
     public class Crypto: IAsset
     {
-        public static int number { get; set; }
+        public int number { get; set; }
         public string asset_id { get; set; }
         public string name { get; set; }
         public double price { get; set; }
@@ -19,10 +19,5 @@ namespace The_choice
         public double change_1h { get; set; }
         public double change_24h { get; set; }
         public double change_7d { get; set; }
-        
-        public Crypto()
-        {
-            number++;
-        }
     }
 }

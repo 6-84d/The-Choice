@@ -19,6 +19,7 @@
     <None Remove="Resources\Logo.png" />
     <None Remove="Resources\Menu.png" />
     <None Remove="Resources\Options.png" />
+    <None Remove="Resources\Pictures\back_curr.png" />
     <None Remove="Resources\RIghtImage.png" />
     <None Remove="Resources\TutorFirst.png" />
     <None Remove="Resources\TutorFirstPage.png" />
@@ -31,6 +32,9 @@
 
   <ItemGroup>
     <Resource Include="Resources\Pictures\Background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\back_curr.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\LetsGoButton.png">

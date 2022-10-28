@@ -39,11 +39,11 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TabPanel Margin="5">
-                                <TextBlock Width="50" FontSize="18" Text="{Binding Path=num}"/>
+                                <TextBlock Width="50" FontSize="18" Text="{Binding Path=number}"/>
                                 <TextBlock Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
                                 <TextBlock Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
                                 <TextBlock Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.0000000}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=0.00}" />
+                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
                                 <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
                                 <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
                                 <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />

@@ -13,6 +13,7 @@ namespace The_choice
             this.Height = SystemParameters.PrimaryScreenHeight;
             this.Width = SystemParameters.PrimaryScreenWidth;
             this.WindowState = WindowState.Maximized;
+            ApiHelper.InitializeClient();
             MainFrame.NavigationService.Navigate(new MainPage());
         }
         private void OptionsPage_Click(object sender, RoutedEventArgs e)

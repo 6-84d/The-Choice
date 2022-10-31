@@ -10,6 +10,7 @@ namespace The_choice
         public CurrenciesPage()
         {
             InitializeComponent();
+            DataContext = new CurrencyListVM();
         }
     }
 }

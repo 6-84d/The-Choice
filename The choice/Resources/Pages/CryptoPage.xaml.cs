@@ -10,7 +10,6 @@ namespace The_choice
         public CryptoPage()
         {
             InitializeComponent();
-            ApiHelper.InitializeClient();
             DataContext = new AppVM();
         }
     }

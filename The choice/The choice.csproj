@@ -19,14 +19,21 @@
     <None Remove="Resources\Logo.png" />
     <None Remove="Resources\Menu.png" />
     <None Remove="Resources\Options.png" />
+    <None Remove="Resources\Pictures\AboutUs.png" />
+    <None Remove="Resources\Pictures\BackgroundOptions.png" />
     <None Remove="Resources\Pictures\back_curr.png" />
+    <None Remove="Resources\Pictures\DarkOff.png" />
     <None Remove="Resources\Pictures\fav_fill_img.png" />
     <None Remove="Resources\Pictures\fav_img.png" />
+    <None Remove="Resources\Pictures\HelpWhite.png" />
+    <None Remove="Resources\Pictures\LampTutor.png" />
     <None Remove="Resources\Pictures\line_curr.png" />
     <None Remove="Resources\Pictures\loading_screen_back.png" />
     <None Remove="Resources\Pictures\logo_loading.png" />
     <None Remove="Resources\Pictures\search_img.png" />
     <None Remove="Resources\Pictures\search_line.png" />
+    <None Remove="Resources\Pictures\SecondBack.png" />
+    <None Remove="Resources\Pictures\StripesMain.png" />
     <None Remove="Resources\Pictures\Title_curr.png" />
     <None Remove="Resources\RIghtImage.png" />
     <None Remove="Resources\TutorFirst.png" />
@@ -39,16 +46,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Pictures\AboutUs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\Background.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\BackgroundOptions.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\back_curr.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\DarkOff.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\fav_fill_img.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\fav_img.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\HelpWhite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\LampTutor.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\LetsGoButton.png">
@@ -88,6 +110,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\search_line.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\SecondBack.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\StripesMain.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\Title_curr.png">

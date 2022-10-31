@@ -5,30 +5,42 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:The_choice"
       mc:Ignorable="d" 
-      d:DesignHeight="320" d:DesignWidth="450"
+      d:DesignHeight="500" d:DesignWidth="700"
       Title="Tutorial">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="..\Pictures\Background.jpg"/>
-        </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="320"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="200*"/>
-            <ColumnDefinition Width="30*"/>
-        </Grid.ColumnDefinitions>
-        <Image Grid.Column="1" Source="..\Pictures\TutorFirstPage.png" VerticalAlignment="Center"/>
-        <Button Grid.Column="0" Height="50" Width="30" HorizontalAlignment="Left" BorderThickness="0">
-            <Button.Background>
-                <ImageBrush ImageSource="..\Pictures\LeftImage.png"/>
-            </Button.Background>
-        </Button>
-        <Button Grid.Column="2" Height="50" Width="30" HorizontalAlignment="Right" BorderThickness="0">
-            <Button.Background>
-                <ImageBrush ImageSource="..\Pictures\RightImage.png"/>
-            </Button.Background>
-        </Button>
-    </Grid>
+    <StackPanel Background="Transparent">
+        <Grid Height="500" Width="700">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="300*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="300*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="30*"/>
+            </Grid.RowDefinitions>
+            <Border Background="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="5" Opacity="0.05" CornerRadius="50"/>
+            <Border Background="White" Grid.Column="1" Grid.Row="1" Opacity="0.1" CornerRadius="50"/>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Border Background="White" Grid.Column="0" Opacity="0.1" Grid.ColumnSpan="3" CornerRadius="30"/>
+                <Button Grid.Column="1" Grid.Row="3" Width="15" Height="30" HorizontalAlignment="Left" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="../Pictures/LeftImage.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Column="1" Grid.Row="3" Width="15" Height="30" HorizontalAlignment="Right" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="../Pictures/RightImage.png"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </Grid>
+    </StackPanel>
 </Page>

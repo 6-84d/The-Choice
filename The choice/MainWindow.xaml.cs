@@ -23,7 +23,7 @@ namespace The_choice
         }
         private void CryptoPage_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new CryptoPage());
+            MainFrame.NavigationService.Navigate(new CryptoPage(MainFrame));
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {

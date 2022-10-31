@@ -26,9 +26,13 @@ namespace The_choice
         }
         private void CryptoPage_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             MainFrame.NavigationService.Navigate(new CryptoPage());
             MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/SecondBack.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+=======
+            MainFrame.NavigationService.Navigate(new CryptoPage(MainFrame));
+>>>>>>> 4d85faa8834ec3144462c9ff1be3792c49d91d9f
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {

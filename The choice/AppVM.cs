@@ -7,9 +7,17 @@ namespace The_choice
 { 
     public class AppVM : INotifyPropertyChanged
     {
-
         public ObservableCollection<Crypto> cryptos { get; set; }
-
+        private Crypto selectedCrypto;
+        public Crypto SelectedCrypto
+        {
+            get { return selectedCrypto; }
+            set
+            {
+                selectedCrypto = value;
+                OnPropertyChanged("SelectedCrypto");
+            }
+        }
         public AppVM()
         {
             cryptos = new ObservableCollection<Crypto>

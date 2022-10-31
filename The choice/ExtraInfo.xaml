@@ -31,10 +31,10 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
                         <Image Source="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                        <Label Content="Ethereum" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                        <Label x:Name="nameLbl" Content="Bitcoin" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Label Content="$1,297.38" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+                    <Label x:Name="priceLbl" Content="$12342342" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
                     <Label Content="0.06761 BTC" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
                     </StackPanel>
                     <GroupBox Grid.Row="1" Grid.Column="0">
@@ -54,7 +54,7 @@
                     <GroupBox Grid.Row="1" Grid.Column="2">
                         <StackPanel>
                             <Label Content="Volume"></Label>
-                            <Label Content="$9,893,534,227"></Label>
+                            <Label x:Name="volumeLbl" Content="{Binding Path=volume_24h}"></Label>
                             <Label Content="3.33%"></Label>
                             <Grid>
                                 <Grid.ColumnDefinitions>

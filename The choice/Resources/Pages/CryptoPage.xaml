@@ -36,7 +36,7 @@
                         </TabPanel>
                     </ListBoxItem>
                 </ListBox>
-                <ListBox Grid.Column="0" ItemsSource="{Binding cryptos}" Background="Transparent">
+                <ListBox x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TabPanel Margin="5">

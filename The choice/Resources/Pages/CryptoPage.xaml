@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:The_choice"
       mc:Ignorable="d" 
-      d:DesignHeight="900" d:DesignWidth="1920"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="CryptoPage">
     <Page.Resources>
         <Style TargetType="TextBlock">
@@ -14,45 +14,53 @@
             <Setter Property="Foreground" Value="White"></Setter>
         </Style>
     </Page.Resources>
-    <Grid Background="Transparent">
+
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="63"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Background="Transparent" Grid.Row="0"/>
-        <ScrollViewer Grid.Row="1">
-            <StackPanel HorizontalAlignment="Center">
-                <ListBox Height="50" Background="Transparent">
-                    <ListBoxItem>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush Opacity="0.8" ImageSource="../Pictures/list_curr.png"></ImageBrush>
+            </Grid.Background>
+            <StackPanel>
+                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="125" Width="1600">
+                    <ListBox.Background>
+                        <ImageBrush Opacity="0.8" ImageSource="../Pictures/Title_curr.png"></ImageBrush>
+                    </ListBox.Background>
+                    <ListBoxItem VerticalAlignment="Bottom" Height="125">
                         <TabPanel>
-                            <Label Width="50" FontSize="18" Content="#"/>
-                            <Label Width="100" FontSize="18" Content="Id" />
-                            <Label Width="250" FontSize="18" Content="Name" />
-                            <Label Width="250" FontSize="18" Content="Price" />
-                            <Label Width="250" FontSize="18" Content="Volume 24h" />
-                            <Label Width="250" FontSize="18" Content="Change 1h"  />
-                            <Label Width="250" FontSize="18" Content="Change 24h" />
-                            <Label Width="250" FontSize="18" Content="Change 7d" />
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content=""/>
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="#"/>
+                            <Label Width="100" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Id" />
+                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Name" />
+                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Price" />
+                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Volume 24h" />
+                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 1h"  />
+                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 24h" />
+                            <Label Width="100" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 7d" />
                         </TabPanel>
                     </ListBoxItem>
                 </ListBox>
-                <ListBox x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
+                <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="900" BorderThickness="0" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TabPanel Margin="5">
-                                <TextBlock Width="50" FontSize="18" Text="{Binding Path=number}"/>
-                                <TextBlock Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.0000000}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
-                                <TextBlock Width="250" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />
+                            <TabPanel Height="100">
+                                <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" Height="15" Width="110" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="50" FontSize="18" Text="{Binding Path=number}"/>
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.########}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />
                             </TabPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-        </ScrollViewer>
+        </Grid>
     </Grid>
 </Page>

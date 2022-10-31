@@ -19,6 +19,7 @@
     <None Remove="Resources\Logo.png" />
     <None Remove="Resources\Menu.png" />
     <None Remove="Resources\Options.png" />
+    <None Remove="Resources\Pages\list_curr.png" />
     <None Remove="Resources\Pictures\AboutUs.png" />
     <None Remove="Resources\Pictures\BackgroundOptions.png" />
     <None Remove="Resources\Pictures\back_curr.png" />
@@ -46,6 +47,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Pictures\list_curr.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\AboutUs.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

@@ -26,31 +26,27 @@ namespace The_choice
         }
         private void CryptoPage_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            MainFrame.NavigationService.Navigate(new CryptoPage());
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/SecondBack.png")));
+            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
-=======
             MainFrame.NavigationService.Navigate(new CryptoPage(MainFrame));
->>>>>>> 4d85faa8834ec3144462c9ff1be3792c49d91d9f
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new CurrenciesPage());
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/SecondBack.png")));
+            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            MainFrame.NavigationService.Navigate(new CurrenciesPage());
         }
         private void MaterialsPage_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new MaterialsPage());
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/SecondBack.png")));
+            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            MainFrame.NavigationService.Navigate(new MaterialsPage());
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new SharesPage());
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/SecondBack.png")));
+            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            MainFrame.NavigationService.Navigate(new SharesPage());
         }
         private void MainPage_Click(object sender, RoutedEventArgs e)
         {

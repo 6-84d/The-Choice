@@ -25,11 +25,11 @@
                 <ImageBrush Opacity="0.8" ImageSource="../Pictures/list_curr.png"></ImageBrush>
             </Grid.Background>
             <StackPanel>
-                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="150" Width="1800">
-                    <ListBox.Background>
-                        <ImageBrush Opacity="0.8" ImageSource="../Pictures/Title_curr.png"></ImageBrush>
-                    </ListBox.Background>
-                    <ListBoxItem VerticalAlignment="Bottom" Height="150">
+                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="100" Width="1800" Background="Transparent">
+                    <ListBoxItem VerticalAlignment="Bottom" Height="100">
+                        <ListBoxItem.Background>
+                            <ImageBrush Opacity="0.8" ImageSource="../Pictures/Title_curr.png"></ImageBrush>
+                        </ListBoxItem.Background>
                         <TabPanel>
                             <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content=""/>
                             <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="#"/>
@@ -46,7 +46,7 @@
                 <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="900" BorderThickness="0" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TabPanel Height="100">
+                            <TabPanel Height="95">
                                 <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" Height="15" Width="110" />
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="50" FontSize="18" Text="{Binding Path=number}"/>
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>

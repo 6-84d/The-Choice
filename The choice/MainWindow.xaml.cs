@@ -13,9 +13,6 @@ namespace The_choice
         public MainWindow()
         {
             InitializeComponent();
-            this.Height = SystemParameters.PrimaryScreenHeight;
-            this.Width = SystemParameters.PrimaryScreenWidth;
-            this.WindowState = WindowState.Maximized;
             ApiHelper.InitializeClient();
             MainFrame.NavigationService.Navigate(new MainPage());
         }

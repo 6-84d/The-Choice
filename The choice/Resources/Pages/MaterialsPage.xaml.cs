@@ -10,6 +10,7 @@ namespace The_choice
         public MaterialsPage()
         {
             InitializeComponent();
+            DataContext = new MetalsListVM();
         }
     }
 }

@@ -1,0 +1,44 @@
+﻿ALU;Aluminum
+ANTIMONY;Antimony
+BITUMEN;Bitumen
+BRASS;Brass
+BRONZE;Bronze
+GALLIUM;Gallium
+INDIUM;Indium
+IRD;Iridium (Troy Ounce)
+IRON;Iron Ore
+LBXAG;LBMA Silver
+LBXAUAM;LBMA Gold Am
+LBXAUPM;LBMA Gold Pm
+LBXPDAM;LBMA Palladium Am
+LBXPDPM;LBMA Palladium Pm
+LBXPTAM;LBMA Platinum Am
+LBXPTPM;LBMA Platinum Pm
+LCO;Cobalt (Troy Ounce)
+LEAD;Lead
+LITHIUM;Lithium
+LME-ALU;LME Aluminium
+LME-LEAD;LME Lead
+LME-NI;LME Nickel
+LME-TIN;LME Tin
+LME-XCU;LME Copper
+LME-ZNC;LME Zinc
+MG;Magnesium
+MN;Manganese
+MO;Molybdenum
+ND;Neodymium
+NI;Nickel
+OSMIUM;Osmium
+RHENIUM;Rhenium
+RUTH;Ruthenium
+TE;Tellurium
+TIN;Tin
+TUNGSTEN;Tungsten
+URANIUM;Uranium
+XAG;Silver (Troy Ounce)
+XAG-AHME;Ahmedabad Silver
+XAG-BANG;Bangalore Silver
+XAG-CHEN;Chennai Silver
+XAG-COIM;Coimbatore Silver
+XAG-DELH;Delhi Silver
+XAG-HYDE;Hyderabad

@@ -13,12 +13,12 @@
             <RowDefinition Height="63*"/>
             <RowDefinition Height="126*"/>
             <RowDefinition Height="226*"/>
+            <RowDefinition Height="100*"/>
             <RowDefinition Height="30*"/>
             <RowDefinition Height="30*"/>
             <RowDefinition Height="30*"/>
             <RowDefinition Height="30*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="226*"/>
+            <RowDefinition Height="100*"/>
             <RowDefinition Height="226*"/>
             <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>
@@ -45,18 +45,26 @@
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="80*"/>
             </Grid.RowDefinitions>
-            <Label Content="Reliable information" Grid.Row="0" VerticalAlignment="Top" FontSize="90" Grid.RowSpan="2" Foreground="White" FontWeight="Light"/>
-            <Label Content="in one place" Grid.Row="2" VerticalAlignment="Top" FontSize="90" Foreground="White" FontWeight="Light"/>
+            <Label Content="Reliable information" Grid.Row="0" VerticalAlignment="Top" FontSize="90" Grid.RowSpan="2" Foreground="White" FontWeight="Bold"/>
+            <Label Content="in one place" Grid.Row="2" VerticalAlignment="Top" FontSize="90" Foreground="White" FontWeight="Bold"/>
         </Grid>
         <Label Content="An agregator where you can study information about different" FontSize="18" Grid.ColumnSpan="6" Grid.Row="4" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
         <Label Content="cryptocurrencies, valuable materials, promotions and" FontSize="18" Grid.ColumnSpan="6" Grid.Row="5" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
         <Label Content="currencies, view places to buy and exchange currencies in a" FontSize="18" Grid.ColumnSpan="6" Grid.Row="6" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
         <Label Content="comfortable, modern and fast interface" FontSize="18" Grid.ColumnSpan="5" Grid.Row="7" Grid.Column="1" Foreground="LightGray" Grid.RowSpan="2"/>
-        <Button x:Name="GoButton" Grid.Row="2" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" VerticalAlignment="Center" Content="Lets go!" Height="90" Width="220" BorderThickness="0" Foreground="White">
-            <Button.Background>
-                <ImageBrush ImageSource="../Pictures/LetsGoButton.png"/>
-            </Button.Background>
-        </Button>
+        <Grid Grid.Column="12" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="GoButton" Grid.Row="1" VerticalAlignment="Center" Content="Lets go!" Height="120" Width="250" BorderThickness="0" FontSize="20" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="../Pictures/LetsGoButton.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+      
         <Grid Grid.Row="9" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="16" Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
@@ -71,6 +79,19 @@
                 <RowDefinition Height="100*"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
+          
+            <Border Grid.Row="0" Grid.Column="0" Opacity="0.1" CornerRadius="50" Background="White">
+                <Button Opacity="0"/>
+            </Border>
+            <Border Opacity="0.1" Grid.Row="0" CornerRadius="50" Grid.Column="2" Background="White">
+                <Button Opacity="0"/>
+            </Border>
+            <Border  Opacity="0.1" Grid.Row="0" CornerRadius="50" Grid.Column="4" Background="White">
+                <Button Opacity="0"/>
+            </Border>
+            <Border Opacity="0.1" Grid.Row="0" Grid.Column="6" CornerRadius="50"  Background="White">
+                <Button Opacity="0"/>
+            </Border>
             <Button x:Name="LeftString" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" Height="30" BorderThickness="0">
                 <Button.Background>
                     <ImageBrush ImageSource="../Pictures/LeftImage.png"/>
@@ -80,20 +101,7 @@
                 <Button.Background>
                     <ImageBrush ImageSource="../Pictures/RightImage.png"/>
                 </Button.Background>
-            </Button>
-            <Border Grid.Row="0" Grid.Column="0" Opacity="0.1" Background="White">
-                <Button x:Name="FirstImg">
-                </Button>
-            </Border>
-            <Border Opacity="0.1" Grid.Row="0" Grid.Column="2" Background="White">
-                <Button x:Name="SecondImg"/>
-            </Border>
-            <Border  Opacity="0.1" Grid.Row="0" Grid.Column="4" Background="White">
-                <Button x:Name="ThirdImg"/>
-            </Border>
-            <Border  Opacity="0.1" Grid.Row="0" Grid.Column="6" Background="White">
-                <Button x:Name="FourthImg"/>
-            </Border>
+            </Button>             
         </Grid>
     </Grid>
 </Page>

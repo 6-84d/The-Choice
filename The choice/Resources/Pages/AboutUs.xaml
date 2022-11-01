@@ -5,15 +5,46 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:The_choice"
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="700"
       Title="AboutUs">
-
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="..\Pictures\Logo.png"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-        </Grid.ColumnDefinitions>
-    </Grid>
+    <StackPanel Background="Transparent">
+        <Grid Height="500" Width="700">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="77*"/>
+                <ColumnDefinition Width="500*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="320*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="80*"/>
+            </Grid.RowDefinitions>
+            <Border Background="White" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="15" Opacity="0.05" CornerRadius="50"/>
+            <Label Content="The Choice" FontWeight="Bold" FontFamily="SF UI Display" Foreground="White" Grid.Column="1" Grid.Row="1" FontSize="15" HorizontalAlignment="Left"/>
+            <Label Content="is a market aggregator program for beginners and investment professionals." FontFamily="SF UI Display" Foreground="White" Grid.Column="2" Grid.Row="1" FontSize="15" HorizontalAlignment="Left"/>
+            <Label Content="Interface collects everything, materials, stocks and currencies, which makes the choice very" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="convenient. The application is clear to use. The goal is to create an application that will be" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="used people in order to study the market of various assets and choose the most suitable one" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="for themselves." Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="Developers: Boiarchuk Bohdan, Vova Yurkevich, Boryslav Linchevskyi" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="7" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="https://github.com/Trapland" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="8" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="https://github.com/YurkevichVA" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="9" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="https://github.com/neonmag" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="10" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="Designer: Chervona Anna" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="12" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+            <Label Content="@red.annaa" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="13" FontFamily="SF UI Display" Foreground="White" FontSize="15"/>
+        </Grid>
+    </StackPanel>
+        
 </Page>

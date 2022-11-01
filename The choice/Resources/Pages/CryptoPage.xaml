@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:The_choice"
       mc:Ignorable="d" 
-      d:DesignHeight="1080" d:DesignWidth="1920"
+      d:DesignHeight="800" d:DesignWidth="1500"
       Title="CryptoPage">
     <Page.Resources>
         <Style TargetType="TextBlock">
@@ -25,21 +25,21 @@
                 <ImageBrush Opacity="0.8" ImageSource="../Pictures/list_curr.png"></ImageBrush>
             </Grid.Background>
             <StackPanel>
-                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="100" Width="1800" Background="Transparent">
-                    <ListBoxItem VerticalAlignment="Bottom" Height="100">
+                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="100" Width="1400" Background="Transparent">
+                    <ListBoxItem VerticalAlignment="Bottom" Height="100">    
                         <ListBoxItem.Background>
                             <ImageBrush Opacity="0.8" ImageSource="../Pictures/Title_curr.png"></ImageBrush>
                         </ListBoxItem.Background>
                         <TabPanel>
-                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content=""/>
-                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="#"/>
-                            <Label Width="100" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Id" />
-                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Name" />
-                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Price" />
-                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Volume 24h" />
-                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 1h"  />
-                            <Label Width="250" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 24h" />
-                            <Label Width="100" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 7d" />
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content=""/>
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="#"/>
+                            <Label Width="80" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Id" />
+                            <Label Width="255" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Name" />
+                            <Label Width="205" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Price" />
+                            <Label Width="230" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Volume 24h" />
+                            <Label Width="130" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Change 1h"  />
+                            <Label Width="130" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Change 24h" />
+                            <Label Width="80" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="14" Content="Change 7d" />
                         </TabPanel>
                     </ListBoxItem>
                 </ListBox>
@@ -51,10 +51,10 @@
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="50" FontSize="18" Text="{Binding Path=number}"/>
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="100" FontSize="18" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=name, StringFormat=0.00}" />
-                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=price, StringFormat=0.########}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="18" Text="{Binding Path=price, StringFormat=0.########}" />
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
-                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
-                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="250" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="130" FontSize="18" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="130" FontSize="18" Text="{Binding Path=change_24h, StringFormat=0.00}" />
                                 <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="18" Text="{Binding Path=change_7d, StringFormat=0.00}" />
                             </TabPanel>
                         </DataTemplate>

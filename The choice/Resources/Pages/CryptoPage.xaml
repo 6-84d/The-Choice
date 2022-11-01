@@ -53,7 +53,7 @@
                         </TabPanel>
                     </ListBoxItem>
                 </ListBox>
-                <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Height="600" BorderThickness="0" Width="1400" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
+                <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Height="700" BorderThickness="0" Width="1400" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TabPanel Height="100">

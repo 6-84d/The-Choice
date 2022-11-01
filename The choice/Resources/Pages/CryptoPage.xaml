@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:The_choice"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1500"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="CryptoPage">
     <Page.Resources>
         <Style TargetType="TextBlock">
@@ -14,27 +14,53 @@
             <Setter Property="Foreground" Value="White"></Setter>
         </Style>
     </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="500*"/>
-            <RowDefinition Height="30*"/> 
+            <RowDefinition Height="63"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="15*"/>
-            <ColumnDefinition Width="15*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="15*"/>
-        </Grid.ColumnDefinitions>
-        <Border Background="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="8" Grid.RowSpan="3" Opacity="0.1" CornerRadius="50"/>
-        <Border Background="White" Opacity="0.2" CornerRadius="30" Grid.Row="2" Grid.Column="1" Width="1250" Grid.ColumnSpan="8"/>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush Opacity="0.8" ImageSource="../Pictures/list_curr.png"></ImageBrush>
+            </Grid.Background>
+            <StackPanel>
+                <ListBox VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="0" Height="125" Width="1400">
+                    <ListBox.Background>
+                        <ImageBrush Opacity="0.8" ImageSource="../Pictures/Title_curr.png"></ImageBrush>
+                    </ListBox.Background>
+                    <ListBoxItem VerticalAlignment="Bottom" Height="125">
+                        <TabPanel>
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content=""/>
+                            <Label Width="50"  Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="#"/>
+                            <Label Width="100" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Id" />
+                            <Label Width="200" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Name" />
+                            <Label Width="200" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Price" />
+                            <Label Width="200" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Volume 24h" />
+                            <Label Width="200" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 1h"  />
+                            <Label Width="200" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 24h" />
+                            <Label Width="150" Foreground="White" FontWeight="Bold" FontFamily="SF UI Display" FontSize="18" Content="Change 7d" />
+                        </TabPanel>
+                    </ListBoxItem>
+                </ListBox>
+                <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Height="600" BorderThickness="0" Width="1400" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TabPanel Height="100">
+                                <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" Height="15" Width="60" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="50" FontSize="14" Text="{Binding Path=number}"/>
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="100" FontSize="14" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=name, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=price, StringFormat=0.########}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                                <TextBlock VerticalAlignment="Center" Foreground="White" Width="200" FontSize="14" Text="{Binding Path=change_7d, StringFormat=0.00}" />
+                            </TabPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

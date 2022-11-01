@@ -30,7 +30,9 @@
     <None Remove="Resources\Pictures\LampTutor.png" />
     <None Remove="Resources\Pictures\line_curr.png" />
     <None Remove="Resources\Pictures\loading_screen_back.png" />
+    <None Remove="Resources\Pictures\LoadScreen.png" />
     <None Remove="Resources\Pictures\logo_loading.png" />
+    <None Remove="Resources\Pictures\Search.png" />
     <None Remove="Resources\Pictures\search_img.png" />
     <None Remove="Resources\Pictures\search_line.png" />
     <None Remove="Resources\Pictures\SecondBack.png" />
@@ -95,6 +97,9 @@
     <Resource Include="Resources\Pictures\loading_screen_back.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\LoadScreen.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -108,6 +113,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\RightImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\Search.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\search_img.png">

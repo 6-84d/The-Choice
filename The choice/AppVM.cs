@@ -34,6 +34,18 @@ namespace The_choice
                 if (info.assets[i].name == "")
                     info.assets[i].name = info.assets[i].asset_id;
                 cryptos.Add(info.assets[i]);
+                if (info.assets[i].change_1h > 0)
+                    info.assets[i].color_change_1h = "green";
+                else
+                    info.assets[i].color_change_1h = "red";
+                if (info.assets[i].change_24h > 0)
+                    info.assets[i].color_change_24h = "green";
+                else
+                    info.assets[i].color_change_24h = "red";
+                if (info.assets[i].change_7d > 0)
+                    info.assets[i].color_change_7d = "green";
+                else
+                    info.assets[i].color_change_7d = "red";
             }
         }
         public event PropertyChangedEventHandler? PropertyChanged;

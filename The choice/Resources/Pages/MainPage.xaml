@@ -67,7 +67,7 @@
       
         <Grid Grid.Row="9" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="16" Background="Transparent">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/> 
                 <ColumnDefinition Width="15*"/>
                 <ColumnDefinition Width="100*"/>
                 <ColumnDefinition Width="15*"/>
@@ -92,15 +92,11 @@
             <Border Opacity="0.1" Grid.Row="0" Grid.Column="6" CornerRadius="50"  Background="White">
                 <Button Opacity="0"/>
             </Border>
-            <Button x:Name="LeftString" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" Height="30" BorderThickness="0">
-                <Button.Background>
-                    <ImageBrush ImageSource="../Pictures/LeftImage.png"/>
-                </Button.Background>
+            <Button x:Name="LeftString" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" Height="30" BorderThickness="0" Background="Transparent">
+                <Image x:Name="LeftStringButton" Source="../Pictures/LeftImage.png"/>
             </Button>
-            <Button x:Name="RigthString" BorderBrush="Transparent" BorderThickness="0" Grid.Row="0" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Center" Width="20" Height="30">
-                <Button.Background>
-                    <ImageBrush ImageSource="../Pictures/RightImage.png"/>
-                </Button.Background>
+            <Button x:Name="RigthString" BorderBrush="Transparent" BorderThickness="0" Grid.Row="0" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Center" Width="20" Height="30" Background="Transparent">
+                <Image x:Name="RightStringButton" Source="../Pictures/RightImage.png"/>
             </Button>             
         </Grid>
     </Grid>

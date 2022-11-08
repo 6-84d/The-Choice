@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Back.jpg" />
     <None Remove="lines.png" />
+    <None Remove="Resources\CheckOnBlack.txt" />
     <None Remove="Resources\GoBorder.png" />
     <None Remove="Resources\GoButton.png" />
     <None Remove="Resources\Help.png" />
@@ -22,17 +23,26 @@
     <None Remove="Resources\Pages\list_curr.png" />
     <None Remove="Resources\Pictures\AboutUs.png" />
     <None Remove="Resources\Pictures\BackgroundOptions.png" />
+    <None Remove="Resources\Pictures\BackgroundWhite.png" />
     <None Remove="Resources\Pictures\back_curr.png" />
     <None Remove="Resources\Pictures\DarkOff.png" />
+    <None Remove="Resources\Pictures\DarkOn.png" />
     <None Remove="Resources\Pictures\Favourite.png" />
+    <None Remove="Resources\Pictures\FavouriteDark.png" />
     <None Remove="Resources\Pictures\fav_fill_img.png" />
     <None Remove="Resources\Pictures\fav_img.png" />
     <None Remove="Resources\Pictures\HelpWhite.png" />
     <None Remove="Resources\Pictures\LampTutor.png" />
+    <None Remove="Resources\Pictures\LeftStringWhite.png" />
+    <None Remove="Resources\Pictures\LinesWhite.png" />
+    <None Remove="Resources\Pictures\LinesWhitePng.png" />
     <None Remove="Resources\Pictures\line_curr.png" />
     <None Remove="Resources\Pictures\loading_screen_back.png" />
     <None Remove="Resources\Pictures\LoadScreen.png" />
     <None Remove="Resources\Pictures\logo_loading.png" />
+    <None Remove="Resources\Pictures\OptionsDark.png" />
+    <None Remove="Resources\Pictures\OptionsWhite.png" />
+    <None Remove="Resources\Pictures\RigthStringWhite.png" />
     <None Remove="Resources\Pictures\Search.png" />
     <None Remove="Resources\Pictures\search_img.png" />
     <None Remove="Resources\Pictures\search_line.png" />
@@ -50,7 +60,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\CheckOnBlack.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\BackgroundWhite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\DarkOn.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\Favourite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\FavouriteDark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\LeftStringWhite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\LinesWhite.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\list_curr.png">
@@ -113,7 +141,16 @@
     <Resource Include="Resources\Pictures\Options.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\OptionsDark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\OptionsWhite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\RightImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\RigthStringWhite.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\Search.png">

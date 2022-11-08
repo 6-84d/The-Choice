@@ -9,7 +9,7 @@
     <Window.Resources>
         <ResourceDictionary Source="OurTemplate.xaml"/>
     </Window.Resources>
-    <Grid x:Name="MyGrid">
+    <Grid x:Name="MyGrid" MouseMove="MyGrid_MouseMove">
         <Grid.Background>
             <ImageBrush ImageSource="Resources/Pictures/Background.jpg"/>
         </Grid.Background>
@@ -70,19 +70,17 @@
             Grid.Row="0" 
             Opacity="1" 
             VerticalAlignment="Bottom">
-            <Button x:Name="CryptoPage" Content="Crypto" Foreground="LightGray" FontWeight="Light" FontSize="18" Click="CryptoPage_Click">
+            <Button x:Name="CryptoPageButton" Content="Crypto" Foreground="LightGray" FontWeight="Light" FontSize="18" Click="CryptoPage_Click">
             </Button>
         </Border>
-        <Button x:Name="CurrenciesPage" Content="Currencies" Grid.Column="4" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" FontSize="18" FontWeight="Light" Click="CurrenciesPage_Click"/> 
-        <Button x:Name="MaterialsPage" Content="Materials" Grid.Column="6" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light" Click="MaterialsPage_Click"/>
-        <Button x:Name="SharesPage" Content="Shares" Grid.Column="8" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light" Click="SharesPage_Click"/>
+        <Button x:Name="CurrenciesPageButton" Content="Currencies" Grid.Column="4" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" FontSize="18" FontWeight="Light" Click="CurrenciesPage_Click"/> 
+        <Button x:Name="MaterialsPageButton" Content="Materials" Grid.Column="6" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light" Click="MaterialsPage_Click"/>
+        <Button x:Name="SharesPageButton" Content="Shares" Grid.Column="8" Grid.Row="0" VerticalAlignment="Bottom" Foreground="LightGray" Background="Transparent" FontSize="18" FontWeight="Light" Click="SharesPage_Click"/>
         <Button x:Name="FavouritePage" Grid.Column="12" Height="35" Width="35" Grid.Row="0" VerticalAlignment="Bottom">
-            <Button.Background>
-                <ImageBrush ImageSource="Resources/Pictures/Favourite.png"/>
-            </Button.Background>
+            <Image x:Name="ButtonFavouriteImage" Source="Resources/Pictures/Favourite.png"/>
         </Button>
-        <Button x:Name="OptionsPage" Grid.Column="15" Grid.Row="0" Height="35" Width="35" VerticalAlignment="Bottom" BorderThickness="0" Background="Transparent" Click="OptionsPage_Click">
-            <Image Source="Resources/Pictures/Options.png"/>   
+        <Button x:Name="OptionsPageButton" Grid.Column="15" Grid.Row="0" Height="35" Width="35" VerticalAlignment="Bottom" BorderThickness="0" Background="Transparent" Click="OptionsPage_Click">
+            <Image x:Name="ButtonOptionsImage" Source="Resources/Pictures/Options.png"/>   
         </Button>
         <Frame Name="MainFrame" Grid.Row="0" Grid.Column="0" Grid.RowSpan="12" Grid.ColumnSpan="16" NavigationUIVisibility="Hidden"></Frame>
     </Grid>

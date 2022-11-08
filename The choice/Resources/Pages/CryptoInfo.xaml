@@ -10,23 +10,23 @@
     <Page.Resources>
         <ResourceDictionary Source="../Dictionary1.xaml"/>
     </Page.Resources>
-    <Grid x:Name="FirstGrid">
+    <Grid x:Name="FirstGrid" Background="Transparent">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" BorderThickness="0" x:Name="cryptoesLB" Grid.Column="0" ItemsSource="{Binding cryptos}" SelectedItem="{Binding SelectedCrypto}" Background="Transparent" SelectionChanged="cryptoesLB_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TabPanel>
+                    <TabPanel Height="50">
                         <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" MinWidth="75" Height="15" Grid.Column="0" />
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="50" FontSize="14" Text="{Binding Path=number}"/>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="140" FontSize="14" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="180" FontSize="14" Text="{Binding Path=name, StringFormat=0.00}" />
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="200" FontSize="14" Text="{Binding Path=price, StringFormat=0.########}" />
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="200" FontSize="14" Text="{Binding Path=volume_24h, StringFormat=### ### ### ###.}" />
-                        <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="220" FontSize="14" Text="{Binding Path=change_1h, StringFormat=0.00}" />
-                        <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="200" FontSize="14" Text="{Binding Path=change_24h, StringFormat=0.00}" />
-                        <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="150" FontSize="14" Text="{Binding Path=change_7d, StringFormat=0.00}" />
+                        <TextBlock Foreground="{Binding Path=color_change_1h}" VerticalAlignment="Center" MinWidth="220" FontSize="14" Text="{Binding Path=change_1h, StringFormat=0.00}" />
+                        <TextBlock Foreground="{Binding Path=color_change_24h}" VerticalAlignment="Center" MinWidth="200" FontSize="14" Text="{Binding Path=change_24h, StringFormat=0.00}" />
+                        <TextBlock Foreground="{Binding Path=color_change_7d}" VerticalAlignment="Center" MinWidth="150" FontSize="14" Text="{Binding Path=change_7d, StringFormat=0.00}" />
                     </TabPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

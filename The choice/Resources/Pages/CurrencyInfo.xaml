@@ -17,7 +17,7 @@
         <ListBox ItemsSource="{Binding currencies}" Background="Transparent" BorderThickness="0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TabPanel>
+                    <TabPanel Height="50">
                         <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" MinWidth="50" Height="15" Grid.Column="0" />
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="80" FontSize="14" Text="{Binding Path=number}"/>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="320" FontSize="14" Text="{Binding Path=name, StringFormat=0.00}" />

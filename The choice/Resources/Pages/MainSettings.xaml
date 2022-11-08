@@ -11,7 +11,7 @@
         <ResourceDictionary Source="..\..\OurTemplate.xaml"/>
     </Page.Resources>
     <StackPanel Background="Transparent">
-        <Grid Height="500" Width="700">
+        <Grid x:Name="MyGrid" Height="500" Width="700">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35*"/>
                 <RowDefinition Height="60*"/>
@@ -29,7 +29,8 @@
                 <ColumnDefinition Width="500*"/>
                 <ColumnDefinition Width="20*"/>
             </Grid.ColumnDefinitions>
-        <Border Background="White" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="5" CornerRadius="50" Opacity="0.05"/>
+            <Border x:Name="BorderBack" Background="White" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="5" CornerRadius="50" Opacity="0.05">
+            </Border>
             <Label Content="Language" Grid.Row="1" Grid.Column="1" Foreground="White" FontSize="15" FontWeight="Light" FontFamily="SF UI Display" VerticalAlignment="Center"/>
             <Label Content="Currency view" Grid.Row="2" Grid.Column="1" Foreground="White" FontSize="15" FontWeight="Light" FontFamily="SF UI Display" VerticalAlignment="Center"/>
             <Label Content="Dark theme" Grid.Row="3" Grid.Column="1" Foreground="White" FontSize="15" FontWeight="Light" FontFamily="SF UI Display" VerticalAlignment="Center"/>
@@ -42,7 +43,7 @@
                 </ComboBox>
             </Border>
             <Border CornerRadius="180" Grid.Row="3" Grid.Column="2" Height="30" Width="50" VerticalAlignment="Center" HorizontalAlignment="Left">
-                <Button>
+                <Button x:Name="ButtonSwitch" Click="Button_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="../Pictures/DarkOff.png"/>
                     </Button.Background>

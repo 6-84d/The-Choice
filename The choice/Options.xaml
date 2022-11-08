@@ -9,7 +9,7 @@
     <Window.Resources>
         <ResourceDictionary Source="OurTemplate.xaml"/>
     </Window.Resources>
-    <StackPanel Height="600" Width="1000">
+    <StackPanel x:Name="OurStack" Height="600" Width="1000" MouseMove="StackPanel_MouseMove">
         <StackPanel.Background>
             <ImageBrush ImageSource="Resources/Pictures/BackgroundOptions.png"/>
         </StackPanel.Background>

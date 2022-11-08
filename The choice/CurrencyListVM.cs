@@ -15,9 +15,13 @@ namespace The_choice
         }
         public async void Load()
         {
+            int number = 1;
             CurrencyResult result = await CurrencyGet.LoadRates("https://openexchangerates.org/api/latest.json?app_id=b43edbb38ba14eea9766294e65657b5a");
             foreach (var rate in result.rates)
-                currencies.Add(new Currency(rate.Key, rate.Value));
+            {
+                currencies.Add(new Currency(rate.Key, rate.Value, number));
+                number++;
+            }
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")

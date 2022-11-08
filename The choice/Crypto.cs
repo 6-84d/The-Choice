@@ -17,7 +17,10 @@ namespace The_choice
         public double price { get; set; }
         public double volume_24h { get; set; }
         public double change_1h { get; set; }
+        public string color_change_1h { get; set; }
         public double change_24h { get; set; }
+        public string color_change_24h { get; set; }
         public double change_7d { get; set; }
+        public string color_change_7d { get; set; }
     }
 }

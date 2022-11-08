@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using The_choice.Resources.Pages;
 
 namespace The_choice
 {
@@ -7,10 +8,14 @@ namespace The_choice
     /// </summary>
     public partial class MaterialsPage : Page
     {
-        public MaterialsPage()
+        private Frame mainFrame;
+
+        public MaterialsPage(Frame mainFrame)
         {
             InitializeComponent();
-            DataContext = new MetalsListVM();
+            //DataContext = new MetalsListVM();
+            this.mainFrame = mainFrame;
+           //MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame));
         }
     }
 }

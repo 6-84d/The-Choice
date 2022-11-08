@@ -11,6 +11,7 @@ namespace The_choice
         {
             InitializeComponent();
             SettingsFrame.NavigationService.Navigate(new MainSettings());
+            this.ResizeMode = ResizeMode.NoResize;
         }
         private void AboutUsBtn_Click(object sender, RoutedEventArgs e)
         {

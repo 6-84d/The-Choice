@@ -24,6 +24,7 @@
     <None Remove="Resources\Pictures\BackgroundOptions.png" />
     <None Remove="Resources\Pictures\back_curr.png" />
     <None Remove="Resources\Pictures\DarkOff.png" />
+    <None Remove="Resources\Pictures\Favourite.png" />
     <None Remove="Resources\Pictures\fav_fill_img.png" />
     <None Remove="Resources\Pictures\fav_img.png" />
     <None Remove="Resources\Pictures\HelpWhite.png" />
@@ -49,6 +50,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Pictures\Favourite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Pictures\list_curr.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -65,9 +69,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\DarkOff.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Pictures\fav_fill_img.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\fav_img.png">

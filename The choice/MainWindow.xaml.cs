@@ -16,6 +16,7 @@ namespace The_choice
             InitializeComponent();
             ApiHelper.InitializeClient();
             MainFrame.NavigationService.Navigate(new MainPage());
+            this.WindowState = WindowState.Maximized;
         }
         private void OptionsPage_Click(object sender, RoutedEventArgs e)
         {
@@ -32,13 +33,13 @@ namespace The_choice
         {
             MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
-            MainFrame.NavigationService.Navigate(new CurrenciesPage());
+            MainFrame.NavigationService.Navigate(new CurrenciesPage(MainFrame));
         }
         private void MaterialsPage_Click(object sender, RoutedEventArgs e)
         {
             MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
             SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
-            MainFrame.NavigationService.Navigate(new MaterialsPage());
+            MainFrame.NavigationService.Navigate(new MaterialsPage(MainFrame));
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {

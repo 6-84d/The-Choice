@@ -14,11 +14,7 @@ namespace The_choice
             InitializeComponent();
             DataContext = new AppVM();
             this.mainFrame = mainFrame;
-        }
-
-        private void cryptoesLB_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        { 
-            this.mainFrame.NavigationService.Navigate(new ExtraInfoPage(((AppVM)DataContext).SelectedCrypto));
+            MainFrame.NavigationService.Navigate(new CryptoInfo(mainFrame));
         }
     }
 }

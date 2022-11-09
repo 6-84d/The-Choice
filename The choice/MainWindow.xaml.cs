@@ -32,33 +32,24 @@ namespace The_choice
         }
         private void CryptoPage_Click(object sender, RoutedEventArgs e)
         {
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
-            SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             MainFrame.NavigationService.Navigate(new CryptoPage(MainFrame));
+            Thread.Sleep(1000);
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
-            SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             MainFrame.NavigationService.Navigate(new CurrenciesPage(MainFrame));
         }
         private void MaterialsPage_Click(object sender, RoutedEventArgs e)
         {
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
-            SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             MainFrame.NavigationService.Navigate(new MaterialsPage(MainFrame));
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/back_curr.png")));
-            SecondGrid.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             MainFrame.NavigationService.Navigate(new SharesPage());
         }
         private void MainPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new MainPage());
-            MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/Background.jpg")));
-            SecondGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/Lines.png")));
         }
 
         private void MyGrid_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)

@@ -20,10 +20,10 @@ namespace The_choice
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            StreamReader streamReader = new StreamReader("CheckOnBlack.txt");
+            StreamReader streamReader = new StreamReader(@"..\..\..\Resources\CheckOnBlack.txt");
             int result = Convert.ToInt32(streamReader.ReadLine());
             streamReader.Close();
-            StreamWriter streamWriter = new StreamWriter("CheckOnBlack.txt");
+            StreamWriter streamWriter = new StreamWriter(@"..\..\..\Resources\CheckOnBlack.txt");
             if (result == 0)
             {
                 streamWriter.WriteLine(Convert.ToString(1));

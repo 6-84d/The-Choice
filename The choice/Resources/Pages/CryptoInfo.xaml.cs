@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,5 +36,31 @@ namespace The_choice.Resources.Pages
         {
             this.mainFrame.NavigationService.Navigate(new ExtraInfoPage(((AppVM)DataContext).SelectedCrypto));
         }
+
+        private void favoriteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Crypto newFavorite = ((Button)sender).DataContext as Crypto;
+            AppVM viewModel = (AppVM)DataContext;
+            StreamWriter writer = null;
+            if (newFavorite.isFavorite)
+            {
+                viewModel.favoriteCryptos.Remove(newFavorite);
+                StreamReader reader = new StreamReader(@"../../../Resources/FavoriteCryptos.txt");
+                string temp = reader.ReadToEnd();
+                reader.Close();
+                writer = new StreamWriter(@"../../../Resources/FavoriteCryptos.txt");
+                writer.Write(temp.Replace(newFavorite.asset_id + ";\r\n", ""));
+                writer.Close();
+            }
+            else
+            {
+                viewModel.favoriteCryptos.Add(newFavorite);
+                writer = new StreamWriter(@"../../../Resources/FavoriteCryptos.txt", true);
+                writer.WriteLine(newFavorite.asset_id + ";");
+                writer.Close();
+            }
+            newFavorite.isFavorite = !newFavorite.isFavorite;
+        }
     }
 }
+

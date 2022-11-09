@@ -21,7 +21,7 @@ namespace The_choice
             ApiHelper.InitializeClient();
             MainFrame.NavigationService.Navigate(new MainPage());
             this.WindowState = WindowState.Maximized;
-            StreamWriter streamWriter = new StreamWriter("CheckOnBlack.txt");
+            StreamWriter streamWriter = new StreamWriter(@"..\..\..\Resources\CheckOnBlack.txt");
             streamWriter.Write(Convert.ToString(0));
             streamWriter.Close();
         }
@@ -33,27 +33,47 @@ namespace The_choice
         private void CryptoPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new CryptoPage(MainFrame));
+            searchFieldBorder.Visibility = Visibility.Visible;
+            searchImg.Visibility = Visibility.Visible;
+            searchTB.Visibility = Visibility.Visible;
+            favoriteButton.Visibility = Visibility.Visible;
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new CurrenciesPage(MainFrame));
+            searchFieldBorder.Visibility = Visibility.Visible;
+            searchImg.Visibility = Visibility.Visible;
+            searchTB.Visibility = Visibility.Visible;
+            favoriteButton.Visibility = Visibility.Visible;
         }
         private void MaterialsPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new MaterialsPage(MainFrame));
+            searchFieldBorder.Visibility = Visibility.Visible;
+            searchImg.Visibility = Visibility.Visible;
+            searchTB.Visibility = Visibility.Visible;
+            favoriteButton.Visibility = Visibility.Visible;
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new SharesPage());
+            searchFieldBorder.Visibility = Visibility.Visible;
+            searchImg.Visibility = Visibility.Visible;
+            searchTB.Visibility = Visibility.Visible;
+            favoriteButton.Visibility = Visibility.Visible;
         }
         private void MainPage_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new MainPage());
+            searchFieldBorder.Visibility = Visibility.Hidden;
+            searchImg.Visibility = Visibility.Hidden;
+            searchTB.Visibility = Visibility.Hidden;
+            favoriteButton.Visibility = Visibility.Hidden;
         }
 
         private void MyGrid_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            StreamReader streamReader = new StreamReader("CheckOnBlack.txt");
+            StreamReader streamReader = new StreamReader(@"..\..\..\Resources\CheckOnBlack.txt");
             int result = Convert.ToInt32(streamReader.ReadLine());
             streamReader.Close();
             if (result == 0)
@@ -75,6 +95,11 @@ namespace The_choice
                 MyGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/Background.jpg")));
                 SecondGrid.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/" + "Resources/Pictures/Lines.png")));
             }
+        }
+
+        private void favoriteButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -18,7 +18,13 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TabPanel Height="50">
-                        <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" MinWidth="75" Height="15" Grid.Column="0" />
+                        <Button x:Name="favoriteBtn" Background="Transparent" BorderBrush="Transparent" Click="favoriteBtn_Click">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="../Pictures/fav_img.png" VerticalAlignment="Center" MinWidth="75" Height="15" Grid.Column="0" />
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="50" FontSize="14" Text="{Binding Path=number}"/>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="140" FontSize="14" Text="{Binding Path=asset_id, StringFormat=0.00}"/>
                         <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="180" FontSize="14" Text="{Binding Path=name, StringFormat=0.00}" />

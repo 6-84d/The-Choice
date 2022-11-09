@@ -22,5 +22,7 @@ namespace The_choice
         public string color_change_24h { get; set; }
         public double change_7d { get; set; }
         public string color_change_7d { get; set; }
+        // describe is asset in favorites
+        public bool isFavorite { get; set; } = false;
     }
 }

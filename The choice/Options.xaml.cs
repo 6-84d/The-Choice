@@ -33,7 +33,7 @@ namespace The_choice
 
         private void StackPanel_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            StreamReader streamReader = new StreamReader("CheckOnBlack.txt");
+            StreamReader streamReader = new StreamReader(@"..\..\..\Resources\CheckOnBlack.txt");
             int result = Convert.ToInt32(streamReader.ReadLine());
             streamReader.Close();
             if (result == 0)

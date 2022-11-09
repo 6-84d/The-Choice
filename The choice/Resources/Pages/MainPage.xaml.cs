@@ -14,7 +14,7 @@ namespace The_choice
         public MainPage()
         {
             InitializeComponent();
-            StreamReader streamReader = new StreamReader("CheckOnBlack.txt");
+            StreamReader streamReader = new StreamReader(@"..\..\..\Resources\CheckOnBlack.txt");
             int result = Convert.ToInt32(streamReader.ReadLine());
             streamReader.Close();
             if (result == 0)

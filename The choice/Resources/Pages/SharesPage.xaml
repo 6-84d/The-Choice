@@ -38,10 +38,6 @@
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="3" Grid.Row="0" Background="White" Grid.ColumnSpan="2" Opacity="0.3" CornerRadius="15" Height="30">
-        </Border>
-        <Image Source="../Pictures/Search.png" Grid.Column="4" Grid.Row="0" Height="15" HorizontalAlignment="Left"/>
-        <TextBox Foreground="White" Grid.Column="3" Grid.Row="0" Background="Transparent" FontSize="18" BorderThickness="0" MinWidth="165" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Border Background="White" Opacity="0.1" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" CornerRadius="80"/>
         <Grid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5" Grid.RowSpan="4">
             <Grid.ColumnDefinitions>

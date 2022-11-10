@@ -4,4 +4,21 @@
         <Setter Property="Width"
                 Value="1920"/>
     </Style>
+    <Style TargetType="{x:Type CheckBox}" x:Key="myCheckboxStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="checkboxImage" Source="Pictures/fav_img.png" Width="32"/>
+                        <ContentPresenter/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="checkboxImage" Property="Source" Value="Pictures/Favourite.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

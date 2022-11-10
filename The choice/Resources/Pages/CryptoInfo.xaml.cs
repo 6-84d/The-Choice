@@ -61,6 +61,29 @@ namespace The_choice.Resources.Pages
             }
             newFavorite.isFavorite = !newFavorite.isFavorite;
         }
+
+        private void favoriteCB_Checked(object sender, RoutedEventArgs e)
+        {
+            Crypto newFavorite = ((CheckBox)sender).DataContext as Crypto;
+            AppVM viewModel = (AppVM)DataContext;
+            viewModel.favoriteCryptos.Add(newFavorite);
+            StreamWriter writer = new StreamWriter(@"../../../Resources/FavoriteCryptos.txt", true);
+            writer.WriteLine(newFavorite.asset_id + ";");
+            writer.Close();
+        }
+
+        private void favoriteCB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Crypto newFavorite = ((CheckBox)sender).DataContext as Crypto;
+            AppVM viewModel = (AppVM)DataContext;
+            viewModel.favoriteCryptos.Remove(newFavorite);
+            StreamReader reader = new StreamReader(@"../../../Resources/FavoriteCryptos.txt");
+            string temp = reader.ReadToEnd();
+            reader.Close();
+            StreamWriter writer = new StreamWriter(@"../../../Resources/FavoriteCryptos.txt");
+            writer.Write(temp.Replace(newFavorite.asset_id + ";\r\n", ""));
+            writer.Close();
+        }
     }
 }
 

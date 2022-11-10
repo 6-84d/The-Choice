@@ -19,7 +19,6 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="{Binding Path=name}" Grid.Column="0" HorizontalAlignment="Center" Margin="10"/>
-                            <TextBlock Text="{Binding Path=code}" Grid.Column="1" HorizontalAlignment="Center" Margin="10"/>
                             <TextBlock Text="{Binding Path=price}" Grid.Column="2" HorizontalAlignment="Center" Margin="10"/>
                         </Grid>
                     </DataTemplate>

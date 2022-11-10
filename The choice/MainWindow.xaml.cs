@@ -54,7 +54,7 @@ namespace The_choice
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new SharesPage());
+            MainFrame.NavigationService.Navigate(new SharesPage(MainFrame));
             searchFieldBorder.Visibility = Visibility.Visible;
             searchImg.Visibility = Visibility.Visible;
             searchTB.Visibility = Visibility.Visible;

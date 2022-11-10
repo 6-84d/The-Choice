@@ -13,9 +13,9 @@ namespace The_choice
         public MaterialsPage(Frame mainFrame)
         {
             InitializeComponent();
-            //DataContext = new MetalsListVM();
+            DataContext = new MetalsVM();
             this.mainFrame = mainFrame;
-           //MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame));
+            MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame));
         }
     }
 }

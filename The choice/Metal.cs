@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace The_choice
 {
-    public class Metal: IAsset
+    public class Metal
     {
         public string? name { get; set; }
-        public string? code { get; set; }
         public double price { get; set; }
-        public Metal(string? name, string? code, double price)
+        public Metal(string? name, double price)
         {
             this.name = name;
-            this.code = code;
             this.price = price;
         }
     }

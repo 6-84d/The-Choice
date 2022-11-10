@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Timers;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
@@ -36,7 +37,6 @@ namespace The_choice
             searchFieldBorder.Visibility = Visibility.Visible;
             searchImg.Visibility = Visibility.Visible;
             searchTB.Visibility = Visibility.Visible;
-            favoriteButton.Visibility = Visibility.Visible;
         }
         private void CurrenciesPage_Click(object sender, RoutedEventArgs e)
         {
@@ -44,7 +44,6 @@ namespace The_choice
             searchFieldBorder.Visibility = Visibility.Visible;
             searchImg.Visibility = Visibility.Visible;
             searchTB.Visibility = Visibility.Visible;
-            favoriteButton.Visibility = Visibility.Visible;
         }
         private void MaterialsPage_Click(object sender, RoutedEventArgs e)
         {
@@ -52,7 +51,6 @@ namespace The_choice
             searchFieldBorder.Visibility = Visibility.Visible;
             searchImg.Visibility = Visibility.Visible;
             searchTB.Visibility = Visibility.Visible;
-            favoriteButton.Visibility = Visibility.Visible;
         }
         private void SharesPage_Click(object sender, RoutedEventArgs e)
         {
@@ -60,7 +58,6 @@ namespace The_choice
             searchFieldBorder.Visibility = Visibility.Visible;
             searchImg.Visibility = Visibility.Visible;
             searchTB.Visibility = Visibility.Visible;
-            favoriteButton.Visibility = Visibility.Visible;
         }
         private void MainPage_Click(object sender, RoutedEventArgs e)
         {
@@ -68,7 +65,6 @@ namespace The_choice
             searchFieldBorder.Visibility = Visibility.Hidden;
             searchImg.Visibility = Visibility.Hidden;
             searchTB.Visibility = Visibility.Hidden;
-            favoriteButton.Visibility = Visibility.Hidden;
         }
 
         private void MyGrid_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)

@@ -82,13 +82,6 @@
         <Image x:Name="searchImg" Source="Resources/Pictures/Search.png" Grid.Column="13" Grid.Row="0" Height="15" HorizontalAlignment="Right" Margin="15" Visibility="Hidden"/>
         <TextBox x:Name="searchTB" Foreground="White" Grid.Column="12" Grid.Row="0" Background="Transparent" FontSize="18" BorderThickness="0" MinWidth="165" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Hidden"/>
         
-        <Button x:Name="favoriteButton" Grid.Column="14" Height="35" Width="35" Grid.Row="0" VerticalAlignment="Bottom" Visibility="Hidden" Click="favoriteButton_Click">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="ButtonFavouriteImage" Source="Resources/Pictures/Favourite.png"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
         <Button x:Name="OptionsPageButton" Grid.Column="15" Grid.Row="0" Height="35" Width="35" VerticalAlignment="Bottom" BorderThickness="0" Background="Transparent" Click="OptionsPage_Click">
             <Image x:Name="ButtonOptionsImage" Source="Resources/Pictures/Options.png"/>   
         </Button>

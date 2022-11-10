@@ -17,14 +17,14 @@ using System.Windows.Shapes;
 namespace The_choice.Resources.Pages
 {
     /// <summary>
-    /// Interaction logic for CryptoInfo.xaml
+    /// Interaction logic for CryptoFavorite.xaml
     /// </summary>
-    public partial class CryptoInfo : Page
+    public partial class CryptoFavorite : Page
     {
         private Frame mainFrame;
-
-        public CryptoInfo(Frame mainFrame, AppVM viewModel)
+        public CryptoFavorite(Frame mainFrame, AppVM viewModel)
         {
+            InitializeComponent();
             InitializeComponent();
             this.mainFrame = mainFrame;
             DataContext = viewModel;
@@ -61,4 +61,3 @@ namespace The_choice.Resources.Pages
         }
     }
 }
-

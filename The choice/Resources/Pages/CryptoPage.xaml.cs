@@ -14,7 +14,17 @@ namespace The_choice
             InitializeComponent();
             DataContext = new AppVM();
             this.mainFrame = mainFrame;
-            MainFrame.NavigationService.Navigate(new CryptoInfo(mainFrame));
+            MainFrame.NavigationService.Navigate(new CryptoInfo(mainFrame, DataContext as AppVM));
+        }
+
+        private void favModeCB_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CryptoFavorite(mainFrame, DataContext as AppVM));
+        }
+
+        private void favModeCB_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CryptoInfo(mainFrame, DataContext as AppVM));
         }
     }
 }

@@ -25,7 +25,6 @@ namespace The_choice.Resources.Pages
         public CryptoFavorite(Frame mainFrame, AppVM viewModel)
         {
             InitializeComponent();
-            InitializeComponent();
             this.mainFrame = mainFrame;
             DataContext = viewModel;
             this.Width = mainFrame.Width;

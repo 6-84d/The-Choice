@@ -18,6 +18,23 @@
                 Value="SF UI Display"/>
             <Setter Property="Foreground" Value="White"></Setter>
         </Style>
+        <Style TargetType="{x:Type CheckBox}" x:Key="myCheckboxStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="checkboxImage" Source="../Pictures/fav_img.png" Width="32"/>
+                            <ContentPresenter/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="checkboxImage" Property="Source" Value="../Pictures/Favourite.png"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -38,7 +55,7 @@
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
-        
+        <CheckBox x:Name="favModeCB" Grid.Row="0" Grid.Column="5" Style="{StaticResource myCheckboxStyle}" Margin="5,15,0,0" Checked="favModeCB_Checked" Unchecked="favModeCB_Unchecked"></CheckBox>
         <Border Background="White" Opacity="0.1" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" CornerRadius="80"/>
         <Grid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5" Grid.RowSpan="4">
             <Grid.ColumnDefinitions>

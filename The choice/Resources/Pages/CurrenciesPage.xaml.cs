@@ -14,7 +14,17 @@ namespace The_choice
             InitializeComponent();
             DataContext = new CurrencyListVM();
             this.mainFrame = mainFrame;
-            MainFrame.NavigationService.Navigate(new CurrencyInfo(mainFrame));
+            MainFrame.NavigationService.Navigate(new CurrencyInfo(mainFrame, DataContext as CurrencyListVM));
+        }
+
+        private void favModeCB_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CurrenciesFavorite(mainFrame, DataContext as CurrencyListVM));
+        }
+
+        private void favModeCB_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new CurrencyInfo(mainFrame, DataContext as CurrencyListVM));
         }
     }
 }

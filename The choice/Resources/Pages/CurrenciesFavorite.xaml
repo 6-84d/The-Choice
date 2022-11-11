@@ -1,0 +1,32 @@
+﻿<Page x:Class="The_choice.Resources.Pages.CurrenciesFavorite"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:The_choice.Resources.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CurrenciesFavorite">
+    <Page.Resources>
+        <ResourceDictionary Source="../Dictionary1.xaml"/>
+    </Page.Resources>
+    <Grid x:Name="FirstGrid" Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" BorderThickness="0" x:Name="currenciesLB" Grid.Column="0" ItemsSource="{Binding favoriteCurrencies}" Background="Transparent">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TabPanel Height="50">
+                        <TabPanel Height="50">
+                            <CheckBox x:Name="favoriteCB" Style="{StaticResource myCheckboxStyle}" IsChecked="{Binding Path=isFavorite}" Checked="favoriteCB_Checked" Unchecked="favoriteCB_Unchecked"></CheckBox>
+                            <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="80" FontSize="14" Text="{Binding Path=number}"/>
+                            <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="320" FontSize="14" Text="{Binding Path=name, StringFormat=0.00}" />
+                            <TextBlock VerticalAlignment="Center" Foreground="White" MinWidth="400" FontSize="14" Text="{Binding Path=price, StringFormat=0.########}" />
+                        </TabPanel>
+                    </TabPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>

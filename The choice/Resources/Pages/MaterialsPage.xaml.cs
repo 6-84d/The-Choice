@@ -15,7 +15,15 @@ namespace The_choice
             InitializeComponent();
             DataContext = new MetalsVM();
             this.mainFrame = mainFrame;
-            MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame));
+            MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame, DataContext as MetalsVM));
+        }
+        private void favModeCB_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new MaterialsFavorite(mainFrame, DataContext as MetalsVM));
+        }
+        private void favModeCB_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new MaterialsInfo(mainFrame, DataContext as MetalsVM));
         }
     }
 }

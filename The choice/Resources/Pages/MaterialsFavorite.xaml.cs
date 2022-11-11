@@ -17,19 +17,19 @@ using System.Windows.Shapes;
 namespace The_choice.Resources.Pages
 {
     /// <summary>
-    /// Interaction logic for MaterialsInfo.xaml
+    /// Interaction logic for MaterialsFavorite.xaml
     /// </summary>
-    public partial class MaterialsInfo : Page
+    public partial class MaterialsFavorite : Page
     {
         private Frame mainFrame;
-
-        public MaterialsInfo(Frame mainFrame, MetalsVM viewModel)
+        public MaterialsFavorite(Frame mainFrame, MetalsVM viewModel)
         {
             InitializeComponent();
             this.mainFrame = mainFrame;
             DataContext = viewModel;
             this.Width = mainFrame.Width;
             this.Height = mainFrame.Height;
+            metalsLB.Width = this.Width;
         }
 
         private void favoriteCB_Checked(object sender, RoutedEventArgs e)

@@ -1,4 +1,4 @@
-﻿<Page x:Class="The_choice.Resources.Pages.MaterialsInfo"
+﻿<Page x:Class="The_choice.Resources.Pages.MaterialsFavorite"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:The_choice.Resources.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
-      Title="MaterialsInfo">
+      Title="MaterialsFavorite">
     <Page.Resources>
         <ResourceDictionary Source="../Dictionary1.xaml"/>
     </Page.Resources>
@@ -14,7 +14,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" BorderThickness="0" x:Name="metalsLB" Grid.Column="0" ItemsSource="{Binding metals}" Background="Transparent">
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" BorderThickness="0" x:Name="metalsLB" Grid.Column="0" ItemsSource="{Binding favoriteMetals}" Background="Transparent">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TabPanel Height="50">

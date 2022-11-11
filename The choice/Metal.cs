@@ -10,10 +10,12 @@ namespace The_choice
     {
         public string? name { get; set; }
         public double price { get; set; }
-        public Metal(string? name, double price)
+        public bool isFavorite { get; set; }
+        public Metal(string? name, double price, bool isFavorite)
         {
             this.name = name;
             this.price = price;
+            this.isFavorite = isFavorite;
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -11,61 +12,39 @@ namespace The_choice
 {
     public class MetalGet
     {
-        public static async Task<Dictionary<string, double>> LoadSpot()
+
+        public static async Task<Dictionary<string, double>> LoadAllMetals()
         {
-            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync("https://api.metals.live/v1/spot"))
-            {
-                if (response.IsSuccessStatusCode)
-                {
-                    Dictionary<string, double> metals = new Dictionary<string, double>();
-                    string content = await response.Content.ReadAsStringAsync();
-                    content = content.Replace("{", "");
-                    content = content.Replace("}", "");
-                    content = content.Replace("[", "");
-                    content = content.Replace("]", "");
-                    content = content.Replace("\"", "");
-                    string[] pairs = content.Split(",");
-                    foreach (string pair in pairs)
-                    {
-                        string[] temp = pair.Split(":");
-                        if (temp[0] == "timestamp") continue;
-                        metals.Add(temp[0], Convert.ToDouble(temp[1].Replace(".", ",")));
-                    }
-                    return metals;
-                }
-                else
-                {
-                    throw new Exception(response.ReasonPhrase);
-                }
-            }
+            string[] metals = { "spot", "spot/commodities" };
+            return await Loadmetals(metals);
         }
-        public static async Task<Dictionary<string, double>> LoadCommodities()
+
+        static async Task<Dictionary<string, double>> Loadmetals(string[] types)
         {
-            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync("https://api.metals.live/v1/spot/commodities"))
+            Dictionary<string, double> metals = new Dictionary<string, double>();
+            foreach (var type in types)
             {
-                if (response.IsSuccessStatusCode)
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync("https://api.metals.live/v1/" + type))
                 {
-                    Dictionary<string, double> metals = new Dictionary<string, double>();
-                    string content = await response.Content.ReadAsStringAsync();
-                    content = content.Replace("{", "");
-                    content = content.Replace("}", "");
-                    content = content.Replace("[", "");
-                    content = content.Replace("]", "");
-                    content = content.Replace("\"", "");
-                    string[] pairs = content.Split(",");
-                    foreach (string pair in pairs)
+                    if (response.IsSuccessStatusCode)
                     {
-                        string[] temp = pair.Split(":");
-                        if (temp[0] == "timestamp") continue;
-                        metals.Add(temp[0], Convert.ToDouble(temp[1].Replace(".", ",")));
+                        string content = await response.Content.ReadAsStringAsync();
+                        content = Regex.Replace(content, "[\\[\\]{}\\\"]", ""); // []{}"
+                        string[] pairs = content.Split(",");
+                        foreach (string pair in pairs)
+                        {
+                            string[] temp = pair.Split(":");
+                            if (temp[0] == "timestamp") continue;
+                            metals.Add(temp[0], Convert.ToDouble(temp[1].Replace(".", ",")));
+                        }
                     }
-                    return metals;
-                }
-                else
-                {
-                    throw new Exception(response.ReasonPhrase);
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
                 }
             }
+            return metals;
         }
     }
 }

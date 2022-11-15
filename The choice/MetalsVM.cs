@@ -24,26 +24,13 @@ namespace The_choice
         }
         public async void Load()
         {
-            Dictionary<string, double> result = await MetalGet.LoadSpot();
+            Dictionary<string, double> result = await MetalGet.LoadAllMetals();
             StreamReader reader = new StreamReader(@"..\..\..\Resources\FavoriteMetals.txt");
             string[] favoritesIDs = reader.ReadToEnd().Split(";\r\n");
             reader.Close();
             foreach (var metal in result)
             {
-                bool isFavorite = false;
-                if (favoritesIDs.Contains(metal.Key))
-                    isFavorite = true;
-                metals.Add(new Metal(metal.Key, metal.Value, isFavorite));
-                
-            }
-            result.Clear();
-            result = await MetalGet.LoadCommodities();
-            foreach (var metal in result)
-            {
-                bool isFavorite = false;
-                if (favoritesIDs.Contains(metal.Key))
-                    isFavorite = true;
-                metals.Add(new Metal(metal.Key, metal.Value, isFavorite));
+                metals.Add(new Metal(metal.Key, metal.Value, favoritesIDs.Contains(metal.Key)));
             }
         }
         public event PropertyChangedEventHandler? PropertyChanged;

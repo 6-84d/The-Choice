@@ -30,11 +30,7 @@ namespace The_choice
             reader.Close();
             foreach (var metal in result)
             {
-                bool isFavorite = false;
-                if (favoritesIDs.Contains(metal.Key))
-                    isFavorite = true;
-                metals.Add(new Metal(metal.Key, metal.Value, isFavorite));
-                
+                metals.Add(new Metal(metal.Key, metal.Value, favoritesIDs.Contains(metal.Key)));
             }
         }
         public event PropertyChangedEventHandler? PropertyChanged;
